@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav_header">
+        <h1>todo list</h1>
+      </nav>
+    </header>
+    <main class="todo_body">
+      <div class="container">
+        <div>
+          <h1>create a todo</h1>
+          <div class="user_input">
+            <div>
+              <input
+                type="text"
+                name="item"
+                id="add_item"
+                placeholder="Add item"
+              />
+              <input id="submit_item" type="submit" value="Add Item" />
+            </div>
+
+            <input id="reset_all" type="submit" value="Clear List" />
+          </div>
+        </div>
+        <div class="list_items">
+          <ul class="user_list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

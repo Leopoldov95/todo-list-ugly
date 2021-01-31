@@ -1,0 +1,139 @@
+:root {
+  --primary-color: steelblue;
+  --text-primary: lightblue;
+  --list-primary: lightgrey;
+  --list-secondary: coral;
+  --bg-primary: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* utilities */
+input[type="submit"] {
+  height: 2rem;
+  padding: 0 1.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+input[type="text"] {
+  padding: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+i:hover {
+  cursor: pointer;
+  display: block;
+}
+
+/* Header */
+/* navbar */
+.nav_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 4rem;
+  background-color: var(--primary-color);
+}
+
+/* main body */
+.todo_body {
+  margin-top: 5rem;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  background-color: red;
+  border-radius: 4px;
+}
+
+.container > div {
+  padding-top: 1rem;
+}
+
+/* .container > div > h1 {
+  padding-bottom: 1rem;
+} */
+
+.user_input {
+  /* padding-bottom: 1rem; */
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.user_input > div {
+  width: 100%;
+  padding-bottom: 0.6rem;
+}
+
+.user_input > input {
+  width: 10rem;
+}
+
+#add_item {
+  width: 80%;
+  border: none;
+  height: 2rem;
+  border-radius: 3px;
+}
+
+/* List items */
+.list_items {
+  text-align: start;
+  padding: 1rem;
+}
+
+.list_items .user_list li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--list-secondary);
+}
+
+.list_items .user_list li:nth-child(2n) {
+  background-color: lightsalmon;
+}
+
+.list_items .user_list i {
+  align-self: end;
+  justify-content: end;
+  text-align: end;
+}
